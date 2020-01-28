@@ -9,8 +9,8 @@ function submitData(name, email){
           "Accept": "application/json"
         },
         body: JSON.stringify({
-            name: "Steve", 
-            email: "steve@steve.com"})
+            name, 
+            email})
       };
 
     return fetch("http://localhost:3000/users", configObject)
